@@ -192,3 +192,11 @@
 .mission-card:nth-child(3) .mission-visual:after{background:radial-gradient(circle at 50% 50%,#d5e7f1,transparent 62%)}
 .mission-card:nth-child(4) .mission-visual:after{background:radial-gradient(circle at 50% 50%,#e8f9eb,transparent 62%)}
 .scenario-cards .card p,.mission-card .mission-content p{color:#3e3630}
+
+/* Homepage scenario grid: four balanced cards without an orphaned final item. */
+.scenario-cards{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
+.scenario-cards .card{min-width:0;min-height:410px;padding:26px}
+.scenario-cards .card-top{margin-bottom:34px}
+.scenario-cards .card h3{font-size:24px}
+@media(max-width:1100px){.scenario-section{height:auto;min-height:100svh}.scenario-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.scenario-cards{grid-template-columns:1fr}.scenario-cards .card{min-height:300px}}
