@@ -1,0 +1,17 @@
+.env
+.DS_Store
+frontend/.next/
+frontend/node_modules/
+frontend/.icloud-backup/
+backend/.env
+backend/vendor/
+backend/storage/logs/*.log
+.taste-skill/chrome-*/
+shots/
+.docx-work/
+.taste-skill/
+canva_resume/
+comparison-guardian-cat/
+resume_assets/
+resume_qa/
+*.zip
